@@ -34,7 +34,7 @@ body{
     overflow-x: hidden;
 }
 header{
-    position: fixed;
+    
     width: 100vw;
 
 }
@@ -107,6 +107,7 @@ nav ul li:hover::after {
     align-items: center;
     justify-content: space-around;
     margin: 0 0 3rem 0;
+    position: relative;
     
 }
 
@@ -158,12 +159,14 @@ button:hover{
         align-items: center;
         gap: 3rem;
         margin-top: 4em ;
+        position: relative;
+
         
     }
 
 .about-us-sec{
    
-    height: 90vh;
+    height: 100vh;
 }
 .abt-cont{
     display: flex;
@@ -182,11 +185,12 @@ width: 40%;
 }
 .abt-cont-text~.abt-img>img{
     margin-bottom: 2em;
-    width: 100%;
+    width: 25rem;
     }
 
 .Why-sec{
-height: 100vh;
+height: 150vh;
+justify-content: space-around;
 }
     .Why-sec-cont{
         width: 90%;
@@ -210,7 +214,11 @@ height: 100vh;
   .desc{
     font-size: var(--body1);
   }
+  .where-sec{
+    height: 150vh;
+  }
 .where{
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
