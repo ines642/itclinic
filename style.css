@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+:root{
+    /*color*/
+    --light-blue:#33A8EF;
+    --dark-blue:#00053B;
+    --lighter-blue:#EFF3FF;
+    --white:#FFFFFF;
+    
+    /*font*/
+    --h1:3.5rem;
+    --h3:2rem;
+    --body1:1.3rem;
+    --body2:1.5rem;
+    --button:1.2rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    width: 100vw;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+a:hover{
+    color: #33a8ef;
+}
+nav ul button{
+    color: white;
+    background-color: #33a8ef;
+    border: 0;
+    padding: 5px 24px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+nav ul button:hover{
+    color: white;
+    background-color:#00053b;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: #33a8ef 1px 1px 5px 1px;
+    align-items: center;
+    background-color: white;
+}
+ul{
+    display:flex;
+    align-items: center;
+    
+}
+nav ul li{
+    position: relative;
+    padding : 1rem;
+    font-size: 16px;
+    transition: .5s;
+}
+nav img{
+    width: 5rem;
+    cursor: pointer;
+}
+nav ul li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top:100%;
+    left: 0;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin:left ;
+}
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    background:var(--lighter-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 3rem 0;
+    
+}
+
+.card{
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    font-size: var(--body1);
+}
+.header-text{
+    font-size: var(--h1);
+    font-weight: bold;
+}
+.header-img{
+    width: 40%;
+}
+.home-img{
+   
+    height: auto;
+}
+button{
+    height: 3rem;
+    width:30%;
+    padding: 1em;
+    min-width: 160px;
+    background:var(--dark-blue);
+    color: var(--white);
+    font-size: var(--button);
+    border-radius:0.4rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+button:hover{
+    opacity: 0.5;
+    }
+    .sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 4em ;
+        
+    }
+
+.about-us-sec{
+   
+    height: 90vh;
+}
+.abt-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abt-cont-text{
+    width: 40%;
+    line-height: 2em;
+}
+.abt-cont-text>p{
+    margin-bottom: 1rem;
+}
+.abt-cont-text~.abt-img{
+width: 40%;
+}
+.abt-cont-text~.abt-img>img{
+    margin-bottom: 2em;
+    width: 100%;
+    }
+
+.Why-sec{
+height: 100vh;
+}
+    .Why-sec-cont{
+        width: 90%;
+        display: grid;
+  grid-template:50% 50%  / repeat(3 , 40%) ;
+  gap: 10px;
+        
+    }
+    .why{
+        height: 20vh;
+        
+    }
+    .why>img{
+        width: 5rem;
+        height: 5rem;
+    }
+  .quality{
+    font-size: var(--body2);
+    font-weight: bold;
+  }
+  .desc{
+    font-size: var(--body1);
+  }
+.where{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.w-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
